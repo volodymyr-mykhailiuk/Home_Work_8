@@ -5,14 +5,11 @@ checker = False
 
 for i in range(2, 101):
     for j in range(2, i):
-        if not i % j and i != j:
-            checker = True
+        if not i % j:
             break
-
-    if not checker:
+    else:
         print(i)
 
-    checker = False
 
 # 2) Выведите на экран «песочные часы», максимальная ширина которых считывается с клавиатуры(число нечетное).
 print()
